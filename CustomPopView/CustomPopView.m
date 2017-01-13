@@ -168,8 +168,6 @@
     self = [super initWithFrame:bounds];
     if (self) {
         //注意这里  这里只是设置颜色的alpha 不是整个View的alpha，如果设置整个View的alpha，子视图的alpha也会改变
-        //self.backgroundColor = [UIColor colorWithHue:100 saturation:10 brightness:200 alpha:0.2];
-        //self.backgroundColor = [UIColor colorWithRed:240.f green:240.f blue:240.f alpha:1];
         self.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:alpha];
         self.titleMenus = titles;
         self.table.frame = CGRectMake(0, 0, CGRectGetWidth(bounds), CGRectGetHeight(bounds));
@@ -197,7 +195,6 @@
         //注意这里  这里只是设置颜色的alpha 不是整个View的alpha，如果设置整个View的alpha，子视图的alpha也会改变
         //这个0.1用来控制蒙板效果的alpha
         self.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.1];
-        //self.backgroundColor = [UIColor colorWithRed:20.f green:100.f blue:100.f alpha:1];
     }
     return self;
 }

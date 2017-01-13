@@ -27,7 +27,6 @@
     self.navigationController.navigationBar.translucent = NO;
     menus = @[@"发起群聊", @"添加朋友",@"扫一扫",@"收付款"];
     [self setNavigitionItem];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)setNavigitionItem{
@@ -43,7 +42,6 @@
     //这里的44是tableView的行高
     CustomPopView *pView = [[CustomPopView alloc]initWithBounds:CGRectMake(0, 0, 120, 44 * menus.count) titleMenus: menus maskAlpha:0.0];
     pView.delegate = self;
-    // pView.containerBackgroudColor = RGBCOLOR(0, 100, 14);//可以用来调节边界线的颜色
     pView.containerBackgroudColor = [UIColor redColor];
     [pView showFrom:sender alignStyle:CPAlignStyleRight];
 }
